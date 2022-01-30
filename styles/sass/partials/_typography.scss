@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap');
+
+html {
+    font-size: 125%; 
+}
+
+h1 {
+    font-family: $heroFont;
+    font-size: 3rem; 
+    font-weight: 400; 
+    color: $solidBlack;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-family: $headingFont;
+    font-weight: 400; 
+    color: $solidBlack;
+    text-transform: uppercase; 
+}
+
+p {
+    font-family: $bodyFont; 
+    font-weight: 400; 
+    color: $solidBlack;
+    line-height: 1.5;
+}
+

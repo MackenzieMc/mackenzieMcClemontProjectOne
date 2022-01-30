@@ -1,0 +1,21 @@
+nav {
+    font-family: $bodyFont;
+    padding-top: 20px;
+    ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0; 
+        li {
+            list-style: none;
+            margin-left: 40px;
+
+            a {
+                text-decoration: none;
+                color: $solidBlack; 
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+

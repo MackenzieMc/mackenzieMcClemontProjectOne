@@ -1,0 +1,41 @@
+.wrapper {
+    max-width: 1260px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.buttonStyle {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    padding: 10px 10px 5px 10px;
+    display: block; 
+    background-color: $tertiary;
+    color: $solidWhite;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.highlight {
+    box-shadow: 15px 15px $secondary;
+}
+
+footer {
+    background-color: $solidBlack;
+    text-align: center;
+    margin: 0;
+    p {
+        margin: 0; 
+        padding: 8px 0;
+        font-family: $bodyFont;
+        color: $solidWhite; 
+    }
+}
+
+span {
+    display: block;
+}
