@@ -15,7 +15,11 @@ nav {
                 color: $solidBlack; 
                 text-transform: uppercase;
             }
+            a:hover {
+                border-bottom: 2px solid $secondary;  
+            }
         }
     }
 }
+
 

@@ -330,6 +330,9 @@ nav ul li a {
   color: #151514;
   text-transform: uppercase;
 }
+nav ul li a:hover {
+  border-bottom: 2px solid #F8FB05;
+}
 
 .indexHeader {
   background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
@@ -577,6 +580,9 @@ nav ul li a {
   border-right: 10px solid #F8FB05;
   border-bottom: 10px solid #F8FB05;
 }
+.blogContent .imgContainer {
+  width: calc(100% - 15px);
+}
 
 .commentFlex {
   display: -webkit-box;
@@ -596,59 +602,73 @@ nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+.commentFlex .commentContainer .imgContainer {
+  width: 40%;
+  margin-right: 40px;
+}
+.commentFlex .commentContainer .textContainer h4 {
+  margin-top: 0;
 }
 
 .blogForm {
   background-color: #E0FDDF;
   width: 50%;
-  margin-bottom: 100px;
+  margin: 50px 0 100px 0;
 }
-.blogForm form input {
+.blogForm form input[type=text],
+.blogForm form input[type=email] {
   width: 45%;
   background-color: #E0FDDF;
   margin-bottom: 50px;
   border: none;
   border-bottom: 2px solid #065635;
+  line-height: 2.5;
+  padding-left: 20px;
 }
 .blogForm form input::-webkit-input-placeholder {
   text-transform: uppercase;
   padding: 10px 0 20px 10px;
   font-size: 0.8rem;
-  opacity: 1;
+  opacity: 0.8;
   color: #151514;
 }
 .blogForm form input::-moz-placeholder {
   text-transform: uppercase;
   padding: 10px 0 20px 10px;
   font-size: 0.8rem;
-  opacity: 1;
+  opacity: 0.8;
   color: #151514;
 }
 .blogForm form input:-ms-input-placeholder {
   text-transform: uppercase;
   padding: 10px 0 20px 10px;
   font-size: 0.8rem;
-  opacity: 1;
+  opacity: 0.8;
   color: #151514;
 }
 .blogForm form input::-ms-input-placeholder {
   text-transform: uppercase;
   padding: 10px 0 20px 10px;
   font-size: 0.8rem;
-  opacity: 1;
+  opacity: 0.8;
   color: #151514;
 }
 .blogForm form input::placeholder {
   text-transform: uppercase;
   padding: 10px 0 20px 10px;
   font-size: 0.8rem;
-  opacity: 1;
+  opacity: 0.8;
   color: #151514;
 }
 .blogForm form input[type=submit] {
   font-family: "Kumar One";
   text-transform: uppercase;
-  padding: 10px 10px 5px 10px;
+  padding: 15px 10px 5px 10px;
   display: block;
   background-color: #065635;
   color: #F5F5F5;
@@ -656,6 +676,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 0.8rem;
   margin-bottom: 0;
+  border: none;
 }
 .blogForm form textarea {
   width: 90%;
@@ -663,21 +684,37 @@ nav ul li a {
   border: 2px solid #065635;
   resize: none;
   margin-bottom: 30px;
+  padding-left: 20px;
 }
 .blogForm form textarea::-webkit-input-placeholder {
-  margin: 5px 0 0 5px;
+  text-transform: uppercase;
+  line-height: 5;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
 .blogForm form textarea::-moz-placeholder {
-  margin: 5px 0 0 5px;
+  text-transform: uppercase;
+  line-height: 5;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
 .blogForm form textarea:-ms-input-placeholder {
-  margin: 5px 0 0 5px;
+  text-transform: uppercase;
+  line-height: 5;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
 .blogForm form textarea::-ms-input-placeholder {
-  margin: 5px 0 0 5px;
+  text-transform: uppercase;
+  line-height: 5;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
 .blogForm form textarea::placeholder {
-  margin: 5px 0 0 5px;
+  text-transform: uppercase;
+  line-height: 5;
+  opacity: 0.7;
+  font-size: 0.8rem;
 }
 .blogForm form .buttonStyle {
   width: 90%;
@@ -700,6 +737,10 @@ nav ul li a {
 }
 .mission .missionContainer .textContainer {
   margin-left: 20px;
+}
+.mission .missionContainer .imgContainer {
+  width: 95%;
+  margin-left: auto;
 }
 
 /* Contact Page */
