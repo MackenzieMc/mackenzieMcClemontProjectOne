@@ -22,6 +22,18 @@
 
 /* Blog Page */ 
 
+.blogHeader {
+    background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 70vh;  
+}
+
+.headerTextContainer {
+    margin-top: 120px; 
+    margin-left: 80px
+}
 
 
 /* Contact Page */ 

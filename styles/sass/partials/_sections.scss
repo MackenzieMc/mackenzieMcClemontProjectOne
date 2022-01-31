@@ -134,6 +134,98 @@
 
 /* Blog Page */ 
 
+.blogMain {
+    background-color: $primary; 
+}
+
+.blogContent {
+    display: flex; 
+    flex-direction: column; 
+    width: 50%; 
+    .textContainer {
+        background-color: white; 
+        border-right: 10px solid $secondary; 
+        border-bottom: 10px solid $secondary;
+    }
+}
+
+.commentFlex {
+    display: flex; 
+    flex-direction: column;
+    width: 50%; 
+    .commentContainer {
+        display: flex; 
+        flex-direction: row; 
+    }
+}
+
+.blogForm {
+    background-color: $primary; 
+    width: 50%;
+    margin-bottom: 100px; 
+    form {
+        input {
+            width: 45%; 
+            background-color: $primary;
+            margin-bottom: 50px; 
+            border: none;
+            border-bottom: 2px solid $tertiary; 
+        }
+        input::placeholder {
+            text-transform: uppercase; 
+            padding: 10px 0 20px 10px; 
+            font-size: 0.8rem; 
+            opacity: 1; 
+            color: $solidBlack; 
+        }
+
+        input[type=submit] {
+            font-family: $headingFont;
+            text-transform: uppercase;
+            padding: 10px 10px 5px 10px;
+            display: block; 
+            background-color: $tertiary;
+            color: $solidWhite;
+            text-align: center; 
+            text-decoration: none;
+            font-size: 0.8rem;
+            margin-bottom: 0; 
+        }
+        textarea {
+            width: 90%;
+            background-color: $primary;
+            border: 2px solid $tertiary; 
+            resize: none;
+            margin-bottom: 30px; 
+        }
+
+        textarea::placeholder {
+            margin: 5px 0 0 5px; 
+        }
+
+        .buttonStyle {
+            width: 90%; 
+
+        }
+    }
+}
+
+.mission {
+    display: flex;
+    position: relative;
+    background-color: $primary;
+    .missionContainer {
+        width: 300px; 
+        height: auto; 
+        background-color: $secondary; 
+        position: absolute;
+        right: 0; 
+        bottom: 1450px; 
+        .textContainer {
+            margin-left: 20px; 
+        }
+    }
+}
 
 
 /* Contact Page */ 

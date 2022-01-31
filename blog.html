@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="blogHeader">
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#">Sanctuary Helpers</a></li>
+                    <li class="logo"><a href="#">Sanctuary <span>Helpers</span></a></li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
@@ -25,9 +25,9 @@
             </div>
         </div><!-- End of wrapper -->
     </header>
-    <main>
+    <main class="blogMain">
         <section class="blogContent" id="blogContent">
-                <div class="imgContainer">
+                <div class="imgContainer highlight">
                     <img src="./sanctuary-helpers-final-images/blog-post-image.jpg" alt="blue couch with white pillows">
                 </div>
                 <div class="textContainer">
@@ -64,23 +64,38 @@
                         </div>
                     </div><!-- End of Comment container 2 -->
                 </div><!-- End of comment container -->
-                <form action="#">
-                    <label for="Name"></label>
-                    <input type="text" id="name" placeholder="name">
-                    
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="email">
-                    
-                    <label for="message" class="sr-only">Comment</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
-                    
-                    <input type="submit" value="Post comment">
-                </form>
+                <div class="blogForm">
+                    <form action="#">
+                        <label for="Name"></label>
+                        <input type="text" id="name" placeholder="name">
+                        
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="email">
+                        
+                        <label for="message" class="sr-only">Comment</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
+                        
+                        <input type="submit" value="Post comment" class="buttonStyle">
+                    </form>
+                </div>
             </div>
         </section>
         <section class="mission" id="mission">
             <div class="missionContainer">
-                <img src="./sanctuary-helpers-final-images/sidebar-image.jpg" alt="bronze colored light fixture hanging from ceiling">
+                <div class="imgContainer">
+                    <img src="./sanctuary-helpers-final-images/sidebar-image.jpg" alt="bronze colored light fixture hanging from ceiling">
+                </div>
+                <div class="textContainer">
+                    <h3>Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum debitis, reprehenderit alias rerum quisquam eius!</p>
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
