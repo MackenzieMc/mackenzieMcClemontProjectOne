@@ -19,7 +19,14 @@ nav {
                 border-bottom: 2px solid $secondary;  
             }
         }
+        .logo a:hover {
+            border-bottom: none;
+        }
     }
+}
+
+.logo:hover {
+    border-bottom: none;
 }
 
 .hamburgerMenu {

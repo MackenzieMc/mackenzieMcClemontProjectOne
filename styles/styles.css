@@ -267,7 +267,7 @@ h4 {
 }
 
 .wrapper {
-  max-width: 1260px;
+  max-width: 1600px;
   width: 85%;
   margin: 0 auto;
 }
@@ -352,6 +352,13 @@ nav ul li a {
 }
 nav ul li a:hover {
   border-bottom: 2px solid #F8FB05;
+}
+nav ul .logo a:hover {
+  border-bottom: none;
+}
+
+.logo:hover {
+  border-bottom: none;
 }
 
 .hamburgerMenu {
@@ -1188,6 +1195,9 @@ input[type=checkbox] {
   nav ul li {
     padding: 10px 30px 5px 10px;
     border-bottom: 2px solid #065635;
+  }
+  nav ul .logo {
+    display: none;
   }
 
   nav input[type=checkbox]:checked + ul {
