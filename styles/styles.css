@@ -350,10 +350,12 @@ nav ul li a {
   color: #151514;
   text-transform: uppercase;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
   border-bottom: 2px solid #F8FB05;
 }
-nav ul .logo a:hover {
+nav ul .logo a:hover,
+nav ul .logo a:focus {
   border-bottom: none;
 }
 

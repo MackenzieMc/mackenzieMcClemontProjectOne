@@ -15,11 +15,13 @@ nav {
                 color: $solidBlack; 
                 text-transform: uppercase;
             }
-            a:hover {
+            a:hover,
+            a:focus {
                 border-bottom: 2px solid $secondary;  
             }
         }
-        .logo a:hover {
+        .logo a:hover,
+        .logo a:focus {
             border-bottom: none;
         }
     }
