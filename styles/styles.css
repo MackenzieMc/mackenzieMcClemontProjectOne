@@ -354,6 +354,14 @@ nav ul li a:hover {
   border-bottom: 2px solid #F8FB05;
 }
 
+.hamburgerMenu {
+  opacity: 0;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+
 .indexHeader {
   background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
@@ -1012,6 +1020,59 @@ nav ul li a:hover {
 }
 
 @media (max-width: 940px) {
+  /* Index Page */
+  .headerImgContainer {
+    width: 75%;
+    bottom: -60px;
+  }
+
+  .materialFlex .imgContainer {
+    width: 60%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .location .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location .flexContainer .groupImgContainer {
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .location .flexContainer .groupTextContainer {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .location .flexContainer .groupTextContainer .wrapperTwo {
+    margin-right: 0;
+  }
+  .location .flexContainer:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .location .flexContainer:nth-child(2) .locationImgContainer {
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    position: static;
+    margin: 50px 0 50px 0;
+  }
+  .location .flexContainer:nth-child(2) .locationTextContainer {
+    margin: 0 0 100px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .location .flexContainer:nth-child(2) .locationTextContainer .wrapperTwo {
+    margin-left: 0;
+  }
+
   /* Contact Page */
   .contactForm form input[type=text],
 .contactForm form input[type=email] {
@@ -1019,6 +1080,33 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 768px) {
+  /* Index Page */
+  .headerImgContainer {
+    width: 80%;
+    bottom: -45px;
+  }
+
+  .materialFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .materialFlex .textContainer {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .materialFlex .imgContainer {
+    margin-top: 50px;
+  }
+
+  .benefitsFlex .benefitsItem {
+    width: 100%;
+    margin-left: 50px;
+  }
+
   /* Contact Page */
   .contactForm form input[type=text],
 .contactForm form input[type=email],
@@ -1034,6 +1122,110 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 480px) {
+  /* Index Page */
+  .hamburgerMenu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: transparent;
+    color: #065635;
+    font-size: 2rem;
+    opacity: 1;
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+  }
+
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 5px;
+    top: 70px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  nav ul li {
+    padding: 10px 30px 5px 10px;
+    border-bottom: 2px solid #065635;
+  }
+
+  nav input[type=checkbox]:checked + ul {
+    opacity: 1;
+    height: 150px;
+  }
+
+  .headerTextContainer {
+    margin: 210px 0 0 0;
+  }
+  .headerTextContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .headerImgContainer {
+    width: 100%;
+  }
+
+  .materialFlex .textContainer h2 {
+    text-align: center;
+  }
+  .materialFlex .imgContainer {
+    width: 90%;
+  }
+
+  .wrapperTwo {
+    margin: 0 5px;
+  }
+
+  /* Contact Page */
+  .hamburgerMenu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: transparent;
+    color: #065635;
+    font-size: 2rem;
+    opacity: 1;
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+  }
+
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 5px;
+    top: 70px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  nav ul li {
+    padding: 10px 30px 5px 10px;
+    border-bottom: 2px solid #065635;
+  }
+
+  nav input[type=checkbox]:checked + ul {
+    opacity: 1;
+    height: 150px;
+  }
+
+  .contactHeader .wrapper .headerTextContainer {
+    margin: 210px 0 0 80px;
+  }
+
   .contact {
     height: auto;
   }
@@ -1046,7 +1238,7 @@ nav ul li a:hover {
         align-content: center;
   }
   .contact .wrapper .contactForm {
-    position: static;
+    position: relative;
     width: 100%;
   }
 
@@ -1065,6 +1257,7 @@ nav ul li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0;
   }
   .addressText p {
     font-size: 1rem;
@@ -1074,6 +1267,32 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 320px) {
+  /* Index Page */
+  .headerTextContainer {
+    margin: 280px 0 0 0;
+  }
+  .headerTextContainer h1 {
+    font-size: 2rem;
+  }
+
+  .galleryItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .galleryItems .items {
+    width: 100%;
+  }
+  .galleryItems .items:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .search .wrapper .textContainer {
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+  }
+
   /* Contact Page */
   .contactHeader .wrapper {
     -webkit-box-orient: vertical;
@@ -1102,11 +1321,6 @@ nav ul li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-  }
-  .contact .wrapper .address,
-.contact .wrapper .addressText {
-    position: absolute;
-    bottom: 0;
   }
 
   .contactForm {

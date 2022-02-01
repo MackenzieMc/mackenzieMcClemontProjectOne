@@ -1,4 +1,54 @@
-@media (max-width: 940px) {
+@media (max-width: 940px) { 
+
+    /* Index Page */ 
+
+    .headerImgContainer {
+        width: 75%;
+        bottom: -60px; 
+    }
+
+    .materialFlex {
+        .imgContainer {
+            width: 60%;
+            align-self: center; 
+        }
+    }
+
+    .location {
+        .flexContainer {
+            flex-direction: column;
+            .groupImgContainer {
+                width: 80%;
+                align-self: center;
+            }
+            .groupTextContainer {
+                margin: 0; 
+                width: 100%;
+                text-align: center;
+                .wrapperTwo {
+                    margin-right: 0; 
+                }
+            }
+        } 
+        .flexContainer:nth-child(2) {
+            flex-direction: column-reverse;
+            .locationImgContainer {
+                width: 80%;
+                align-self: center;
+                position: static;
+                margin: 50px 0 50px 0; 
+            }
+            .locationTextContainer {
+                margin: 0 0 100px 0; 
+                width: 100%;
+                text-align: center;
+                .wrapperTwo {
+                    margin-left: 0; 
+                }
+            }
+        }
+    }
+
     /* Contact Page */ 
     .contactForm {
         form {
@@ -11,6 +61,34 @@
 }
 
 @media (max-width: 768px) {
+
+    /* Index Page */ 
+
+    .headerImgContainer {
+        width: 80%;
+        bottom: -45px;
+    }
+
+    .materialFlex {
+        flex-direction: column;
+        .textContainer {
+            width: 100%;
+            align-items: center;
+        }
+        .imgContainer {
+            margin-top: 50px; 
+        }
+    }
+
+    .benefitsFlex {
+        .benefitsItem {
+            width: 100%; 
+            margin-left: 50px; 
+        }
+        
+    }
+
+
     /* Contact Page */ 
 
     .contactForm {
@@ -33,13 +111,129 @@
 }
 
 @media (max-width: 480px) {
+
+    /* Index Page */ 
+
+    .hamburgerMenu {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background-color: transparent;
+        color: $tertiary;
+        font-size: 2rem;
+        opacity: 1;
+    }
+
+    input[type=checkbox] {
+        position: absolute;
+        top: 10px;
+        right: 10px; 
+        opacity: 0;
+    }
+
+    nav {
+        ul {
+            flex-direction: column;
+            position: absolute;
+            right: 5px;
+            top: 70px;
+            overflow: hidden;
+            opacity: 0;
+            li {
+                padding: 10px 30px 5px 10px;
+                border-bottom: 2px solid $tertiary;
+            }
+        }
+    }
+
+    nav {
+        input[type=checkbox]:checked + ul {
+            opacity: 1;
+            height: 150px;
+        }
+    }
+
+    .headerTextContainer {
+        margin: 210px 0 0 0; 
+        h1 {
+            font-size: 2.5rem; 
+        }
+    }
+
+    .headerImgContainer {
+        width: 100%;
+    }
+
+    .materialFlex {
+        .textContainer {
+            h2 {
+                text-align: center;
+            }
+        }
+        .imgContainer {
+            width: 90%;
+        }
+    }
+
+    .wrapperTwo {
+        margin: 0 5px;
+    }
+    /* Contact Page */ 
+
+    .hamburgerMenu {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background-color: transparent;
+        color: $tertiary;
+        font-size: 2rem;
+        opacity: 1;
+    }
+
+    input[type=checkbox] {
+        position: absolute;
+        top: 10px;
+        right: 10px; 
+        opacity: 0;
+    }
+
+    nav {
+        ul {
+            flex-direction: column;
+            position: absolute;
+            right: 5px;
+            top: 70px;
+            overflow: hidden;
+            opacity: 0;
+            li {
+                padding: 10px 30px 5px 10px;
+                border-bottom: 2px solid $tertiary;
+            }
+        }
+    }
+
+    nav {
+        input[type=checkbox]:checked + ul {
+            opacity: 1;
+            height: 150px;
+        }
+    }
+
+    .contactHeader {
+        .wrapper {
+            .headerTextContainer {
+                margin: 210px 0 0 80px
+            }
+        }
+    }
+
     .contact {
         height: auto;
         .wrapper {
             flex-direction: column;
             align-content: center;
             .contactForm {
-                position: static;
+                position: relative;
                 width: 100%;
             }
         }
@@ -50,6 +244,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 0; 
         p {
             font-size: 1rem;
         }
@@ -62,6 +257,34 @@
 }
 
 @media (max-width: 320px) {
+
+    /* Index Page */ 
+
+    .headerTextContainer {
+        margin: 280px 0 0 0; 
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .galleryItems {
+        flex-direction: column;
+        .items {
+            width: 100%;
+        }
+        .items:nth-child(2) {
+            margin-left: 0;
+        }
+    }
+
+    .search {
+        .wrapper {
+            .textContainer {
+                padding: 50px 0 0 0;
+                margin-bottom: 50px; 
+            }
+        }
+    }
     /* Contact Page */ 
     .contactHeader{
         .wrapper {
@@ -85,11 +308,6 @@
             display: flex; 
             flex-direction: column;
             position: relative;
-            .address,
-            .addressText {
-                position: absolute;
-                bottom: 0;
-            }
         }
     }
 
@@ -111,4 +329,5 @@
             }
         }
     }
+
 }
