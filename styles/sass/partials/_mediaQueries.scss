@@ -1,0 +1,114 @@
+@media (max-width: 940px) {
+    /* Contact Page */ 
+    .contactForm {
+        form {
+            input[type=text],
+            input[type=email] {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    /* Contact Page */ 
+
+    .contactForm {
+        form {
+            input[type=text],
+            input[type=email],
+            input[type=submit] {
+                margin-left: 20px
+            }
+            textarea {
+                margin-left: 20px; 
+            }
+        }
+    }
+    .addressText {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        height: auto;
+        .wrapper {
+            flex-direction: column;
+            align-content: center;
+            .contactForm {
+                position: static;
+                width: 100%;
+            }
+        }
+    }
+    .addressText {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 1rem;
+        }
+        .iconBar {
+            i {
+                font-size: 1rem; 
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    /* Contact Page */ 
+    .contactHeader{
+        .wrapper {
+            flex-direction: column;
+            .headerTextContainer {
+                margin-left: 0px;
+                h1 {
+                    font-size: 2.5rem; 
+                    text-align: center; 
+                }
+            }
+        }
+    }
+
+    .addressText {
+        width: 100%;
+    }
+
+    .contact {
+        .wrapper {
+            display: flex; 
+            flex-direction: column;
+            position: relative;
+            .address,
+            .addressText {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    .contactForm {
+        width: 100%;
+        form {
+            input[type=text],
+            input[type=email] {
+                width: 80%;
+            }
+            input[type=email] {
+                margin-top: 0;
+            }
+            textarea {
+                width: 80%;
+            }
+            input[type=submit] {
+                width: 80%;
+            }
+        }
+    }
+}

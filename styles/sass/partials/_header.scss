@@ -1,9 +1,11 @@
 .indexHeader {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+    background-size: cover;
+    background-position: top;
     height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .headerTextContainer {
@@ -14,7 +16,7 @@
 }
 
 .headerImgContainer {
-    width: 55%;
+    width: 50%;
     position: absolute;
     bottom: -100px; 
 
@@ -46,7 +48,7 @@
     height: 70vh;
     .wrapper {
         .headerTextContainer {
-            margin: 100px 0 0 50px; 
+            margin: 100px 0 0 80px; 
         }
     }
 }
