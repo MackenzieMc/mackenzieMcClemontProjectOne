@@ -1073,6 +1073,16 @@ input[type=checkbox] {
     margin-left: 0;
   }
 
+  /* Blog Page */
+  .commentFlex .commentContainer .imgContainer {
+    width: 60%;
+  }
+
+  .blogForm form input[type=text],
+.blogForm form input[type=email] {
+    width: calc(50% - 28px);
+  }
+
   /* Contact Page */
   .contactForm form input[type=text],
 .contactForm form input[type=email] {
@@ -1105,6 +1115,30 @@ input[type=checkbox] {
   .benefitsFlex .benefitsItem {
     width: 100%;
     margin-left: 50px;
+  }
+
+  /* Blog Page */
+  .blogContent {
+    width: 95%;
+  }
+
+  .blogComments {
+    width: 95%;
+  }
+
+  .mission {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mission .missionContainer {
+    position: static;
+    margin-bottom: 50px;
+  }
+
+  .blogForm form input[type=text],
+.blogForm form input[type=email] {
+    width: calc(50% - 34px);
   }
 
   /* Contact Page */
@@ -1183,6 +1217,7 @@ input[type=checkbox] {
     margin: 0 5px;
   }
 
+  /* Blog Page */
   /* Contact Page */
   .hamburgerMenu {
     position: absolute;
