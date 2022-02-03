@@ -518,13 +518,13 @@ input[type=checkbox] {
 .benefitsItem:nth-child(1),
 .benefitsItem:nth-child(3) {
   margin-right: 50px;
-  width: calc(50% - 50px);
+  width: calc(50% - 60px);
 }
 
 .benefitsItem:nth-child(2),
 .benefitsItem:nth-child(4) {
   margin-left: 50px;
-  width: calc(50% - 50px);
+  width: calc(50% - 60px);
 }
 
 .offers h3::before {
