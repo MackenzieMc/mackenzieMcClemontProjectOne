@@ -272,6 +272,10 @@
             width: 15%;
             margin-right: 40px; 
             object-fit: cover;
+            img {
+                width: unset;
+                max-width: unset;
+            }
         }
         .textContainer{
             h4 {
