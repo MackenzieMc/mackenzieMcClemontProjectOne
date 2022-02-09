@@ -104,9 +104,15 @@ if (document.body.className === 'contactBody') {
         //Append the paragraph element to the div
         contactDiv.appendChild(paragraphElement); 
 
+        //Add Paragraph styling
+        paragraphElement.style.textAlign = 'center';
+
+        //Set a timer function to revert back to the contact form
         setTimeout(function() { 
             location.reload() 
         }, 2000);
 
     })
 };
+
+
