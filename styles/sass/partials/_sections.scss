@@ -147,9 +147,9 @@
             align-items: flex-start;
             text-align: left; 
             width: 50%; 
-            margin: 100px 0 0 200px;
+            margin: 50px 0 0 200px;
             .wrapperTwo {
-                margin-right: 50%; 
+                margin-right: 10%; 
                 a {
                     display: inline-block;
                 }
@@ -160,6 +160,12 @@
             width: 50%;
             left: 0;
             top: -60px;  
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%; 
+            }
+            
         }
         .locationTextContainer {
             display: flex; 
@@ -167,9 +173,9 @@
             align-items: flex-end;
             text-align: right; 
             width: 50%; 
-            margin: 100px 200px 0 0; 
+            margin: 100px 200px 50px 0; 
             .wrapperTwo {
-                margin-left: 50%;
+                margin-left: 10%;
                 a {
                     display: inline-block; 
                 }
@@ -179,7 +185,12 @@
             position: relative;
             width: 50%;
             right: 0; 
-            bottom: -60px; 
+            bottom: -60px;
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%; 
+            }
 
         }
     }
